@@ -1,15 +1,12 @@
 Fablabseoul Academy 2016 Webpage
-html5up.net | @n33co
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-
 
 Credits:
-
-	Demo Images:
-		Michael Domaradzki (md.photomerchant.net)
-
+	Design/Contents:
+	Eduardo Chamorro Martin
+	Html:
+	html5up.net | @n33co
 	Icons:
-		Font Awesome (fortawesome.github.com/Font-Awesome)
+	Font Awesome (fortawesome.github.com/Font-Awesome)
 
 	Other:
 		jQuery (jquery.com)
