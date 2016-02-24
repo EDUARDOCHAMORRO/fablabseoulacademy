@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Making flexible PCBs with a Vinylcutter</title>
+<link href="tutorial_styles.css" rel="stylesheet" type="text/css">
+<style>
+body {
+	color: #333;
+	font-family: Tahoma, Geneva, sans-serif;
+	background-image: url(images/background.gif);
+	background-repeat: repeat;
+}
+</style>
+</head>
+
+<body>
+<div id="container">
+<p><a href="index-tutorials.html">Back to tutorial index</a></p>
+<h1>Making flexible PCBs with a Vinyl Cutter</h1>
+<p>Making flexible PCB is more easy than most of people may think, it is usefull in some kind of application as wereables, or flexible and small mechanism where the pcb has to be embedded.</p>
+<p> We can even make them with a modest vinyl cutter as <a href="http://www.silhouetteamerica.com/">Silhoutte Cameo (aprox 200$)</a>the one we have in <a href="http://fablab-seoul.org/">Fab Lab Seoul.</a> </p>
+<p>The circuits that you can cut on the Roland are limited by the width of   the pen knife. As a rule of thumb, anything that you can cut with a lot   of time and effort with an x-acto can be cut by the Roland, but if there   are things that are too small for that they will probably also be too   small for the vinyl cutter. </p>
+<h1><img src="images/vinylisp/1.jpg" width="800" height="534"></h1>
+<h2>MATERIAL SET UP</h2>
+<p>We will need:</p>
+<p> <a href="http://multimedia.3m.com/mws/media/104361O/tape-1126-copper-foil-with-conductive-adhesive.pdf">3M 1126 conductive adhesive tape</a></p> 
+<p><a href="http://www.dupont.com/products-and-services/membranes-films/polyimide-films/brands/kapton-polyimide-film.html">Kapton Tape</a>  </p>
+<p>Flexible Support,we used a thin PVC sheet</p>
+<p><a href="http://www.amazon.co.uk/Silhouette-Cameo-12-inch-Replacement-Cutting/dp/B005VPVW3I">Cutting mat for vinylcutter</a>
+<p><a href="http://www.digikey.com/l">Electronic components for your board</a></p>
+<p>Kapton Tape is not obligatory but highly recommended,as it will protect your Pvc sheet from overheating while your solder the electronic components.</p>
+<p>If you don't use it we recommend to set a high temperature on your solder iron a solder all the components fast by heating a short time in each pad.(Be carefull to don't melt the support material or you components as you will waste your board)</p>
+<p></p>
+<p><h2>MATERIAL LOADING</h2>
+  </p>
+  Stick the copper adhesive tape to the pvc surface,use a plastic ruller to glue it correctly and avoid bubbles that will ruin your cut,now stick you pvc to your cutting mat to get more &quot;grip&quot;during the cut as if you were cutting cardboard.(If you use Kapton tape the layer order is Cutting mat-PVC-KAPTON-COPPER TAPE)
+  <p><img src="images/vinylisp/9.jpg" width="800" height="534"></p>
+  <p>Load the material in the vinylcutter, be sure to put the release lever down to help you loading the material and remember to put it up to lock it thight.<img src="images/vinylisp/11.jpg" width="800" height="534"></p>
+  <p>For loading the material follow the instructions on the machine screen.We sure that the white rollers grip the material.<img src="images/vinylisp/7.jpg" width="803" height="445"></p>
+  <h2>SETTING THE FILES</h2>
+  <p>This tutorial uses <a href="inkscape.html">Inkscape</a> to prepare files for the vinyl cutter.</p>
+  <p>In our case we are going to use the main machine software <a href="http://www.silhouetteamerica.com/">Silhoutte</a> Studio for all the steps as we found this method shorter in steps and with similar results.</p>
+  <p>First thing to check is our board dimensions the be sure the traces are on scale.For that you can use any raster program, our choice was to use <a href="http://fabmodules.org/">fabmodules</a> as it also shows the dimensions and pixel density of our PNG
+  <img src="images/vinylisp/51.jpg" width="800" height="450"></p>
+  <p>In this case we where making the FabISP SMDCrystal type. It dimensions as we can see are : 22.98x45.21mm</p>
+  <p>We open the traces PNG with<a href="http://www.silhouetteamerica.com/"> Silhoutte</a> Studio and check the PNG size. If it doesn't keep the correct dimensions,we have to scale it,to change it use (SCALE/MOVE on the up right menu)<img src="images/vinylisp/54.jpg" width="800" height="450"></p>
+  <p>For the vinylcutter you only need one contour so after checking the correct scale we can transform the PNG in to a vector path so the machine can cut it properly.</p>
+  <p>Click the TRACE button (up right menu)<img src="images/vinylisp/55.jpg" width="800" height="450"></p>
+  <p>Select the area to TRACE in this case we want to cut the whole board so select it all, nothing happends if you select more space as we are going to transform the PNG by color contrast white/black of the own PNG.<img src="images/vinylisp/56.jpg" width="800" height="450"></p>
+  <p>Move the sliders on the right (HIGH/LOW PASS FILTER) until the board is correctly defined.</p>
+</p> 
+<p>You should get something like this. <img src="images/vinylisp/57.jpg" width="800" height="450"></p>
+<p>Right now the paths are on the top of your PNG image, so we click on it to select it and move it.Like this.<img src="images/vinylisp/58.jpg" width="800" height="450"></p>
+<p>NOW IS VERY IMPORTANT TO CHECK THAT ALL THE TRACES ARE CONNECTED CORRECTLY BY VISUAL MAKING THE COMPARISON WITH BETWEEN BOTH.If everything is fine we can erase now the PNG.</p>
+<p>Move the board to the top left corner so the PCB will be cutted next to the origin point of your Vinycutter.</p>
+
+<p><img src="images/vinylisp/61.jpg" width="800" height="450"></p><h2>CUTTING PARAMETERS</h2>
+<p>You want enough force in your circuit to cut through the copper, but not   through the backing. If you use too much force, the traces will also be   dragged up with the cutting.</p>
+<p>In  <a href="http://www.silhouetteamerica.com/">the Silhoutte Cameo</a> case we have to adjust the vale force via hardware and software.</p>
+<p>How to do it?Open the Vinyl front door and pick up the blade by opening the looking mechanism.<img src="images/vinylisp/4.jpg" width="800" height="355"></p>
+<p>To adjust the force you have to rotate the blade setting the number from 1 to 10 (low to maximum force)<img src="images/vinylisp/3.jpg" width="829" height="360"></p>
+<pre>
+We find out that the best values in our case where:
+
+VINYL MATERIAL  
+with custom settings
+
+FORCE 6-8
+THICKNESS 27-30
+SPEED 1 cm/s
+Double Cut
+Line segment overcut: off
+</pre>
+<p>There is a test cut on the menu so you can make different material/force trials. </p>
+<p>Check the correct connection between the programm and the machine and send the file.<img src="images/vinylisp/62.jpg" width="800" height="450"></p>
+<h2>WEEDING THE CIRCUIT</h2>
+<p>After a few shots you should get something like this.<img src="images/vinylisp/14.jpg" width="800" height="534"><img src="images/vinylisp/15.jpg" width="800" height="534"></p>
+<p>It is time to separe the cutting mat and the PVC sheet<img src="images/vinylisp/16.jpg" width="800" height="534"></p>
+<p>Cut the PVC around your board,remember to let enought space on the side so you can work with it easier.<img src="images/vinylisp/17.jpg" width="800" height="534"></p>
+<p>With the help how a cutter knife and a good pair of tweezers put slowly out all the excess of copper.<img src="images/vinylisp/20.jpg" width="800" height="534">Clean completely the board and time to bend!<img src="images/vinylisp/21.jpg" width="800" height="534"></p>
+<p>Soldering is the same as soldering on any other PCB. However, while   soldering you might find that some of your traces are looser than need   be. Fix these by adding extra pressure to the trace.</p>
+<pre>Solder tips
+
+If you find out some &quot;moving traces&quot; make extra pressure on them to glue them correctly
+
+Use a higher soldering temperature than usual but spend less time on each pad.
+
+BE FAST!
+
+Let the material cooldown so you don't melt the PVC base.
+
+Use hot glue around the connectors to avoid breaking them while unpluging</pre>
+
+<p>Enjoy your flexible board!<img src="images/vinylisp/22.jpg" width="800" height="534"></p>
+</div>
+<div id="footer">
+  <a rel="license" style="float:left;margin-right:10px;" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a>
+       All content © 2016 <a xmlns:cc="http://creativecommons.org/ns#" href="http://eduardochamorro.wix.com/portfolio" property="cc:attributionName" rel="cc:attributionURL">Eduardo Chamorro </a>(except where otherwise noted) Some rights reserved.<br />
+          Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a> 
+      </div>
+</body>
+</html>
