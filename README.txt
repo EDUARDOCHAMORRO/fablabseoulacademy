@@ -1,12 +1,10 @@
-Fablabseoul Academy 2016 Webpage
+Fablabseoul Academy 2016 Webpage (Deprecated)
 
 Credits:
 	Design/Contents:
 	Eduardo Chamorro Martin
-	Html:
-	html5up.net | @n33co
-	Icons:
-	Font Awesome (fortawesome.github.com/Font-Awesome)
+	Html:html5up.net | @n33co
+	Icons:Font Awesome (fortawesome.github.com/Font-Awesome)
 
 	Other:
 		jQuery (jquery.com)
