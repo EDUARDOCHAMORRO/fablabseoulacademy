@@ -2,7 +2,7 @@
 
 ## Credits:
 	Design/Contents:
-	[Eduardo Chamorro Martin](eduardochamorromartin@gmail.com)
+	[Eduardo Chamorro Martin] (eduardochamorromartin@gmail.com)
 	FabLab Seoul
 	
 ## Sources:
