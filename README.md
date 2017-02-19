@@ -4,7 +4,7 @@ Repository for hosting 2016 students blog,manuals,etc.
 
 ## Credits/Design/Contents:
 
-- [Eduardo Chamorro Martin](eduardochamorromartin@gmail.com)
+- [Eduardo Chamorro Martin]eduardochamorromartin@gmail.com
 - FabLab Seoul
 	
 ## Sources:
