@@ -23,3 +23,6 @@ Repository for hosting 2016 students blog,manuals,etc.
 - jquery.scrolly (n33.co)
 - jquery.onvisible (n33.co)
 - Skel (skel.io)
+
+## License:
+- Creative Commons Attribution 3.0 Unported
